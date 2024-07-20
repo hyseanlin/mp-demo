@@ -1,3 +1,7 @@
+'''
+Download the face_detector task file from the MediaPipe model zoo.
+!wget -q -O detector.tflite -q https://storage.googleapis.com/mediapipe-models/face_detector/blaze_face_short_range/float16/1/blaze_face_short_range.tflite
+'''
 from typing import Tuple, Union
 import math
 import cv2
@@ -80,7 +84,6 @@ options = vision.FaceDetectorOptions(base_options=base_options)
 detector = vision.FaceDetector.create_from_options(options)
 
 cap = cv2.VideoCapture(0)
-
 if not cap.isOpened():
     print("Error: Could not open video.")
     exit()
