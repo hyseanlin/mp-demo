@@ -1,1 +1,6 @@
 .idea/
+*.tflite
+*.task
+*.png
+*.jpg
+*.jpeg
