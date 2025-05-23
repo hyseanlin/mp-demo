@@ -149,7 +149,7 @@ if not cap.isOpened():
     print("Error: Could not open video.")
     exit()
 
-decoration = cv2.imread('glasses.png', cv2.IMREAD_UNCHANGED)  # Shape: (H, W, 4)
+decoration = cv2.imread('glasses2.png', cv2.IMREAD_UNCHANGED)  # Shape: (H, W, 4)
 
 
 while True:
